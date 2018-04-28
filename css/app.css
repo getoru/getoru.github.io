@@ -1,0 +1,48 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin:  0px;
+    padding: 0px;
+}
+
+.center {
+    position: absolute;
+    left: 50%; top: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+}
+
+.unfull {
+    width: 30%;
+}
+
+.blur {
+    -webkit-filter: blur(3px);
+    -moz-filter: blur(3px);
+    filter: blur(3px);
+}
+
+.full {
+    position: absolute;
+    left: 0; top: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.bg {
+    background: #FFF url('../assets/behind.jpg');
+    background-size: contain;
+    background-position: center;
+}
+
+@media only screen and (max-width: 768px) {
+    .unfull {
+        width: 70%;
+    }
+
+    .blur {
+        -webkit-filter: blur(4px);
+        -moz-filter: blur(4px);
+        filter: blur(4px);
+    }
+}
